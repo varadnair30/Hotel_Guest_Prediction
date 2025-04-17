@@ -1,0 +1,5 @@
+venv/
+mlruns/
+logs/
+Hotel_management.egg-info/
+notebook/catboost_info
