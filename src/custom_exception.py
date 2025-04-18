@@ -8,7 +8,7 @@ class CustomException(Exception):   #We need teh predefined exception also from 
         
     @staticmethod
     def get_detailed_error_message(error_message,error_detail:sys):
-        _,_,exc_tb = error_detail.exc_info()    #We only need the last thing which is the traceback so _,_,exec_tb
+        _,_,exc_tb = traceback.sys.exc_info()    #We only need the last thing which is the traceback so _,_,exec_tb
         filename=exc_tb.tb_frame.f_code.co_filename  #Filename where the error occured.
         line_number = exc_tb.tb_lineno #Line number where the error occured.
         return f"Error occured in script: [{filename}] at line number: [{line_number}] error message: [{error_message}]"
