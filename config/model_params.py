@@ -10,8 +10,8 @@ LIGHTGBM_PARAMS = {
     
 }
 RANDOM_SERACH_PARAMS={
-    'n_iter': 10,
-    'cv': 5,
+    'n_iter': 5,
+    'cv': 2,
     'n_jobs': -1,
     'verbose': 2,
     'random_state': 42,
