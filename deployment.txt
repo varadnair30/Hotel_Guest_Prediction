@@ -160,9 +160,24 @@ usermod -aG root jenkins
 exit
 docker restart jenkins-dind
 
+----------------------- Connecting Jenkins with GCP----------------------------
+
+Add new credential, this time add the service key JSON file. (This gives access of GCP Cloud to Jenkins)
+Then open Gcloud and search API services.
+
+Enable three APIs:
+1)Gcloud cloud registry API enbale
+2)Artifact registry API enable
+3) Cloud resource manager API enable->select service account-> Add one new owner role
 
 
-REST ALL THINGS ARE EXPLAINED IN VIDEOS ---------------------------------->
+----------------Building the image of project and pushing to GCP Cloud registry--------------------------
+
+Now go to IAM and admin and under service account add new role of owner
+
+Then update the Jenkins file for buiding the image of project and pushing to GCP Cloud registry
+
+REST ALL THINGS ARE EXPLAINED ---------------------------------->
 YOU CAN COPY CODE FROM HEREE ..............................
 
 
