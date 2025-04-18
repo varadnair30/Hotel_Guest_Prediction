@@ -43,8 +43,8 @@ pipeline {
                         gcloud config set project ${GCP_PROJECT}
                         gcloud auth configure-docker --quiet
 
-                        docker build -t gcr.io/${GCP_PROJECT}/hotel_guest_prediction .
-                        docker push gcr.io/${GCP_PROJECT}/hotel_guest_prediction
+                        docker build -t gcr.io/${GCP_PROJECT}/hotel-guest-prediction .
+                        docker push gcr.io/${GCP_PROJECT}/hotel-guest-prediction
                         '''
                     }
                 }
@@ -62,7 +62,7 @@ pipeline {
                         gcloud config set project ${GCP_PROJECT}
 
                         gcloud run deploy hotel_guest_prediction \
-                        --image=gcr.io/${GCP_PROJECT}/hotel_guest_prediction \
+                        --image=gcr.io/${GCP_PROJECT}/hotel-guest-prediction \
                         --platform=managed \
                         --region=us-central1
                         --allow-unauthenticated
