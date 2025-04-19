@@ -43,8 +43,8 @@ pipeline {
                         gcloud config set project ${GCP_PROJECT}
                         gcloud auth configure-docker --quiet
 
-                        docker build -t gcr.io/${GCP_PROJECT}/hotel-guest-prediction .
-                        docker push gcr.io/${GCP_PROJECT}/hotel-guest-prediction
+                        docker build -t gcr.io/${GCP_PROJECT}/hotel .
+                        docker push gcr.io/${GCP_PROJECT}/hotel
                         '''
                     }
                 }
@@ -61,8 +61,8 @@ pipeline {
                         gcloud auth activate-service-account --key-file=${GOOGLE_APPLICATION_CREDENTIALS}
                         gcloud config set project ${GCP_PROJECT}
 
-                        gcloud run deploy hotel_guest_prediction \
-                        --image=gcr.io/${GCP_PROJECT}/hotel-guest-prediction \
+                        gcloud run deploy hotel \
+                        --image=gcr.io/${GCP_PROJECT}/hotel \
                         --platform=managed \
                         --region=us-central1
                         --allow-unauthenticated
