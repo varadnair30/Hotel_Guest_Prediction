@@ -22,7 +22,7 @@ Features: - Booking_ID, Number of Adults, Children, Number of Week/Weekend Night
 
 - Standardisation
 
-# Tableau- [LINK]
+# Tableau-
 
 ![image](https://github.com/user-attachments/assets/a6bd37b6-3f7d-4297-91fc-280b07143256)
 
@@ -72,6 +72,8 @@ Below is the model architecture:
 Precision of 91% as shown in MLFLOW
 
 # Friendly Interface
+
+-Link: https://hotel-1015024842965.us-central1.run.app/
 
 ![image](https://github.com/user-attachments/assets/f748c663-768e-4dba-b956-eb2e9426a6e7)
 
