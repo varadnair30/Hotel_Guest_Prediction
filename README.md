@@ -8,7 +8,7 @@ The project adopts a structured approach, encompassing data exploration, feature
 
 # Dataset Overview
 
--Dataset Link: [link]
+-Dataset Link: https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset
 
 Dataset Size: 29,020 rows, 18 columns
 
@@ -22,7 +22,9 @@ Features: - Booking_ID, Number of Adults, Children, Number of Week/Weekend Night
 
 - Standardisation
 
-# Tableau-
+# Tableau
+
+-Link:  
 
 ![image](https://github.com/user-attachments/assets/a6bd37b6-3f7d-4297-91fc-280b07143256)
 
