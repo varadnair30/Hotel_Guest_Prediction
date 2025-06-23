@@ -1,4 +1,4 @@
-# Satya-bit-Hotel_Guest_Prediction
+# Hotel_Guest_Prediction
 
 ![image](https://github.com/user-attachments/assets/2c9977c0-ea75-446b-8968-5845726cf8e6)
 
